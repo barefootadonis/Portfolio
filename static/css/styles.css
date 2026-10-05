@@ -1,6 +1,4 @@
-/* =========================
-   Root variables
-   ========================= */
+/* Root variables */
 
 :root {
     --background: #ffffff;
@@ -12,11 +10,6 @@
     --light-pink: #fff0f5;
 }
 
-
-/* =========================
-   General page styling
-   ========================= */
-
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -25,10 +18,7 @@ body {
 }
 
 
-/* =========================
-/* =========================
-   Navigation
-   ========================= */
+/* Navigation */
 
 nav {
     height: 60px;
@@ -56,9 +46,7 @@ nav .links a:hover {
 }
 
 
-/* =========================
-   Hero section
-   ========================= */
+/* Hero section */
 
 .hero {
     padding: 100px 10%;
@@ -95,9 +83,7 @@ nav .links a:hover {
 }
 
 
-/* =========================
-   About section
-   ========================= */
+/* About section */
 
 .intro {
     padding: 80px 10%;
@@ -113,9 +99,7 @@ nav .links a:hover {
 }
 
 
-/* =========================
-   Skills section
-   ========================= */
+/* Skills section */
 
 .skills {
     display: grid;
@@ -281,9 +265,7 @@ nav .links a:hover {
 }
 
 
-/* =========================
-   Footer
-   ========================= */
+/* Footer */
 
 footer {
     padding: 7px 10%;
@@ -298,4 +280,119 @@ footer a {
 
 footer a:hover {
     color: var(--text);
+}
+
+/* Mobile Friendly */
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: var(--text);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        height: auto;
+        padding: 20px 6%;
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav .links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 20px 6%;
+        background-color: var(--background);
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav .links.active {
+        display: flex;
+    }
+
+    nav .links a {
+        margin-left: 0;
+    }
+
+    .hero {
+        padding: 70px 8%;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+
+    /* About section */
+    .intro {
+        padding: 60px 8%;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 60px 8%;
+    }
+
+    .skills section {
+        padding: 25px;
+    }
+
+
+    .projects {
+        padding: 60px 8%;
+    }
+
+    .projects h1 {
+        font-size: 40px;
+    }
+
+    .projects-intro {
+        margin-bottom: 35px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .project-card {
+        padding: 25px;
+    }
+
+
+    .contact {
+        padding: 70px 8%;
+    }
+
+    .contact h1 {
+        font-size: 40px;
+    }
+
+    .contact input,
+    .contact textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    footer {
+        padding: 20px 8%;
+    }
+
 }

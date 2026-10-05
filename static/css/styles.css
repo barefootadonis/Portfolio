@@ -231,9 +231,18 @@ nav .links a:hover {
 }
 
 .project-card {
+    display: block;
     padding: 30px;
     background-color: var(--light-pink);
     border-radius: 12px;
+    text-decoration: none;
+    color: var(--text);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
 .project-card h2 {
@@ -250,6 +259,13 @@ nav .links a:hover {
 .project-card p {
     line-height: 1.6;
     color: var(--secondary-text);
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--text);
+    font-weight: bold;
 }
 
 .project-card a {

@@ -1,0 +1,301 @@
+/* =========================
+   Root variables
+   ========================= */
+
+:root {
+    --background: #ffffff;
+    --light-green: #f7fcf8;
+    --text: #171717;
+    --secondary-text: #6b6b7a;
+    --pink: #f4c2d7;
+    --green: #c4e6ce;
+    --light-pink: #fff0f5;
+}
+
+
+/* =========================
+   General page styling
+   ========================= */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+
+/* =========================
+/* =========================
+   Navigation
+   ========================= */
+
+nav {
+    height: 60px;
+    padding: 0 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background);
+}
+
+nav .name {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--text);
+}
+
+nav .links a {
+    color: var(--secondary-text);
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+nav .links a:hover {
+    color: var(--text);
+}
+
+
+/* =========================
+   Hero section
+   ========================= */
+
+.hero {
+    padding: 100px 10%;
+    background-color: var(--light-green);
+}
+
+.hero h1 {
+    font-size: 64px;
+    margin: 0 0 20px 0;
+    max-width: 700px;
+}
+
+.hero p {
+    color: var(--secondary-text);
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 650px;
+}
+
+.hero a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 24px;
+
+    background-color: var(--pink);
+    color: var(--text);
+
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.hero a:hover {
+    background-color: var(--green);
+}
+
+
+/* =========================
+   About section
+   ========================= */
+
+.intro {
+    padding: 80px 10%;
+    text-align: center;
+    background-color: var(--light-green);
+}
+
+.intro p {
+    max-width: 850px;
+    margin: 0 auto;
+    color: var(--secondary-text);
+    line-height: 1.7;
+}
+
+
+/* =========================
+   Skills section
+   ========================= */
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    padding: 80px 10%;
+
+    background-color: var(--light-green);
+}
+
+.skills section {
+    padding: 30px;
+    background-color: var(--light-pink);
+    border-radius: 12px;
+}
+
+.skills h3 {
+    margin-top: 0;
+}
+
+.skills li {
+    margin-bottom: 10px;
+    color: var(--secondary-text);
+}
+
+.contact {
+    min-height: 70vh;
+    padding: 100px 10%;
+    background-color: var(--light-green);
+}
+
+.contact h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.contact > p {
+    max-width: 650px;
+    color: var(--secondary-text);
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.contact form {
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+    padding: 14px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 16px;
+    background-color: white;
+}
+
+.contact textarea {
+    resize: vertical;
+}
+
+.contact button {
+    width: fit-content;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--pink);
+    color: var(--text);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: var(--green);
+}
+
+.contact-links {
+    margin-top: 40px;
+}
+
+.contact-links a {
+    margin-right: 25px;
+    color: var(--text);
+    text-decoration: none;
+}
+
+.contact-links a:hover {
+    color: var(--secondary-text);
+}
+
+.contact input:focus,
+.contact textarea:focus,
+.contact button:focus {
+    outline: 2px solid var(--green);
+    outline-offset: 2px;
+}
+
+.projects {
+    padding: 80px 10%;
+    background-color: var(--light-green);
+    min-height: 70vh;
+}
+
+.projects h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.projects-intro {
+    max-width: 650px;
+    color: var(--secondary-text);
+    line-height: 1.6;
+    margin-bottom: 50px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.project-card {
+    padding: 30px;
+    background-color: var(--light-pink);
+    border-radius: 12px;
+}
+
+.project-card h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.project-card .technologies {
+    font-weight: bold;
+    color: var(--secondary-text);
+    font-size: 14px;
+}
+
+.project-card p {
+    line-height: 1.6;
+    color: var(--secondary-text);
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--text);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.project-card a:hover {
+    color: var(--secondary-text);
+}
+
+
+/* =========================
+   Footer
+   ========================= */
+
+footer {
+    padding: 7px 10%;
+    text-align: center;
+    background-color: var(--background);
+}
+
+footer a {
+    color: var(--secondary-text);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--text);
+}
